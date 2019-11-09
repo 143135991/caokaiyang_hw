@@ -1,4 +1,5 @@
-#《Mesos: A platform for fine-grained resource sharing in the data center》论文解读
+#《Mesos: A platform for fine-grained resource sharing in the data center》论文解读#
+
 随着数据处理的需求不断增长，越来越多的计算框架层出不穷，因此也出现了多种框架共享同一集群的现象。
 而之前的共享策略是将机器分区给不同的框架（类似虚拟机），这种策略既不能实现高效运作，也没能实现有效的数据共享。
 这大大阻碍了计算能力的提升。可以说，缺乏一个更加合理的共享策略是这一领域的瓶颈之一。
