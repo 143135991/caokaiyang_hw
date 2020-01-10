@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tinyurlapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tinyurlapp
+  template:
+    metadata:
+      labels:
+        app: tinyurlapp
+    spec:
+      containers:
+      - name: tinyurl
+        image: yourls
+        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,1 @@
+kubectl delete -f yourls.yaml -f mysql.sh
